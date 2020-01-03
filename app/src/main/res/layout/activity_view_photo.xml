@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.photo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <ListView
+            android:id="@+id/tagListView"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:scrollbars="vertical">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="434dp"
+            android:layout_height="190dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Person/Tag"
+                    android:inputType="textPersonName"
+                    android:text="Person/Tag" />
+
+                <Button
+                    android:id="@+id/addTagAction"
+                    android:layout_width="120dp"
+                    android:layout_height="61dp"
+                    android:text="Add Tag" />
+
+                <Button
+                    android:id="@+id/removeTagAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Remove A Tag" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="156dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Keyword"
+                    android:inputType="textPersonName"
+                    android:text="Keyword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="231dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/prevAction"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:text="Prev" />
+
+                <Button
+                    android:id="@+id/nextAction"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:text="Next" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

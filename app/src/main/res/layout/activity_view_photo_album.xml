@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.photo.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+
+        <ListView
+            android:id="@+id/listOfImages"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+        </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addPhotoAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addPhotoAction"
+                android:text="Add New Photo" />
+
+            <Button
+                android:id="@+id/deletePhotoAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deletePhotoAction"
+                android:text="Delete " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/viewPhotoAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewPhotoAction"
+                android:text="Open Photo" />
+
+            <Button
+                android:id="@+id/movePhotoAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="movePhotoAction"
+                android:text="Move Photo" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
